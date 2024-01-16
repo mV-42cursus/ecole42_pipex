@@ -1,0 +1,21 @@
+The main difference between stdout (standard output) and stderr (standard error) is their intended PURPOSE and the TYPE OF INFORMATION they handle.
+
+-> Standard Output (stdout):
+stdout is the default file descriptor for regular output in a program.
+It is used to display normal program output or any information that is not an error or diagnostic message.
+By default, stdout is associated with the console or terminal where the program is running, and its output is typically displayed directly to the user.
+Example uses of stdout include printing program results, status updates, or general information.
+
+-> Standard Error (stderr):
+stderr is a separate file descriptor specifically designed to handle error messages and diagnostic output.
+It is used to display error messages, warnings, or any other diagnostic information related to the program's execution.
+By default, stderr is also associated with the console or terminal.
+The key distinction is that 
+
+<!--
+	stderr is meant for critical or exceptional messages that need to be separated from the regular output, particularly error-related information.
+-->
+
+Unlike stdout, stderr is not affected by output redirections or pipes. It remains independent and continues to display messages directly to the user, even if the regular output is redirected or captured elsewhere.
+The separation of stderr from stdout allows errors and diagnostics to be easily identified and distinguished from regular program output.
+In summary, stdout is used for regular program output, while stderr is specifically meant for error messages and diagnostic information. Separating them helps in differentiating between normal output and critical information related to program execution.
